@@ -1,65 +1,97 @@
 export default function Cliente() {
   const productos = [
-    { nombre: "Thermo T3", imagen: "/thermo_t3.jpg", precio: "S/ 189" },
-    { nombre: "Berry Balance", imagen: "/berry_balance.jpg", precio: "S/ 179" },
-    { nombre: "Shake It", imagen: "/shake_it.jpg", precio: "S/ 165" },
-    { nombre: "Reishi Plus", imagen: "/reishi_plus.jpg", precio: "S/ 199" },
-    { nombre: "Vita Xtra T+", imagen: "/vita_xtra_tplus.jpg", precio: "S/ 185" },
-    { nombre: "Prunex", imagen: "/prunex.jpg", precio: "S/ 150" },
-    { nombre: "BioPro Sport", imagen: "/biopro_sport.jpg", precio: "S/ 210" },
-    { nombre: "Cacao Xtra", imagen: "/cacao_xtra.jpg", precio: "S/ 175" },
-    { nombre: "Ganoderma Lucidum", imagen: "/ganoderma_lucidum.jpg", precio: "S/ 195" },
-    { nombre: "Floravital", imagen: "/floravital.jpg", precio: "S/ 170" },
-    { nombre: "Omega 3", imagen: "/omega_3.jpg", precio: "S/ 160" },
-    { nombre: "Colagen Pro", imagen: "/colagen_pro.jpg", precio: "S/ 180" },
+    {
+      nombre: "Flora Liv",
+      imagen: "/flora_liv.jpg",
+      precio: "Consultar",
+      descripcion: "Equilibrio digestivo y bienestar intestinal."
+    },
+    {
+      nombre: "Prunex",
+      imagen: "/prunex.jpg",
+      precio: "Consultar",
+      descripcion: "Apoyo natural para tránsito intestinal saludable."
+    },
+    {
+      nombre: "Vita Xtra T",
+      imagen: "/vita_xtra_t.jpg",
+      precio: "Consultar",
+      descripcion: "Energía física y mental con fórmula natural."
+    },
+    {
+      nombre: "Thermo T3",
+      imagen: "/thermo_t3.jpg",
+      precio: "Consultar",
+      descripcion: "Apoyo metabólico y control de peso."
+    },
+    {
+      nombre: "No Carb-T",
+      imagen: "/no_carb_t.jpg",
+      precio: "Consultar",
+      descripcion: "Control de antojos y apoyo en reducción de carbohidratos."
+    }
   ];
 
   return (
-    <div style={{ fontFamily: "Arial", padding: "40px" }}>
+    <div style={{ fontFamily: "Arial, sans-serif", padding: "40px", backgroundColor: "#f4f6f8" }}>
+
       <h1 style={{ textAlign: "center", color: "#1F5E3B" }}>
-        Catálogo Oficial VitaFux
+        Control de Peso y Bienestar Natural
       </h1>
-      <p style={{ textAlign: "center" }}>
-        Distribución oficial Fuxion – Huaraz | Envíos nacionales e internacionales
+
+      <p style={{ textAlign: "center", maxWidth: "600px", margin: "20px auto" }}>
+        Productos Fuxion distribuidos oficialmente por VitaFux.
+        Asesoría personalizada desde Huaraz con envíos nacionales e internacionales.
       </p>
 
       <div style={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+        gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
         gap: "30px",
-        marginTop: "40px"
+        marginTop: "50px"
       }}>
         {productos.map((producto, index) => (
           <div key={index} style={{
-            border: "1px solid #ddd",
-            borderRadius: "15px",
-            padding: "20px",
+            backgroundColor: "white",
+            borderRadius: "16px",
+            padding: "25px",
             textAlign: "center",
-            boxShadow: "0 4px 10px rgba(0,0,0,0.08)"
+            boxShadow: "0 6px 15px rgba(0,0,0,0.08)",
+            transition: "transform 0.2s ease"
           }}>
             <img
               src={producto.imagen}
               alt={producto.nombre}
-              style={{ width: "100%", height: "250px", objectFit: "contain" }}
+              style={{
+                width: "100%",
+                height: "240px",
+                objectFit: "contain",
+                marginBottom: "20px"
+              }}
             />
-            <h3>{producto.nombre}</h3>
+            <h3 style={{ marginBottom: "5px" }}>{producto.nombre}</h3>
             <p style={{ fontWeight: "bold", color: "#1F5E3B" }}>
               {producto.precio}
             </p>
+            <p style={{ fontSize: "14px", marginTop: "10px" }}>
+              {producto.descripcion}
+            </p>
+
             <a
-              href={`https://wa.me/51987275932?text=Hola,%20quiero%20comprar%20${producto.nombre}`}
+              href={`https://wa.me/51987275932?text=Hola,%20quiero%20información%20sobre%20${producto.nombre}`}
               target="_blank"
               style={{
                 display: "inline-block",
-                marginTop: "10px",
-                padding: "10px 20px",
+                marginTop: "15px",
+                padding: "10px 22px",
                 backgroundColor: "#25D366",
                 color: "white",
                 borderRadius: "8px",
-                textDecoration: "none"
+                textDecoration: "none",
+                fontSize: "14px"
               }}
             >
-              Comprar por WhatsApp
+              Solicitar información
             </a>
           </div>
         ))}
