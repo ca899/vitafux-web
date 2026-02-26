@@ -53,7 +53,21 @@ export default function Emprendedor() {
         <br />
         Envíos nacionales e internacionales
       </div>
-
+ <div style={{ textAlign: "center", marginTop: "60px", fontSize: "14px" }}>
+  <p>Síguenos en redes oficiales</p>
+  <a
+    href="https://www.facebook.com/share/1DyrA3kQmL/"
+    target="_blank"
+    style={{
+      color: "#1877F2",
+      textDecoration: "none",
+      fontWeight: "bold"
+    }}
+  >
+    Facebook VitaFux
+  </a>
+</div>
+      
     </div>
   );
 }
