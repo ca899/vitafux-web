@@ -31,7 +31,7 @@ export default function Emprendedor() {
 
         <div style={{ textAlign: "center", marginTop: "40px" }}>
           <a
-            href="https://wa.me/51987275932?text=Hola,%20quiero%20información%20para%20unirme%20a%20VitaFux"
+            href="https://wa.me/51967861674?text=Hola,%20quiero%20información%20para%20unirme%20a%20VitaFux"
             target="_blank"
             style={{
               padding: "14px 30px",
