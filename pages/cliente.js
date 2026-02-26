@@ -78,7 +78,7 @@ export default function Cliente() {
             </p>
 
             <a
-              href={`https://wa.me/51987861674?text=Hola,%20quiero%20información%20sobre%20${producto.nombre}`}
+              href={`https://wa.me/51967861674?text=Hola,%20quiero%20información%20sobre%20${producto.nombre}`}
               target="_blank"
               style={{
                 display: "inline-block",
