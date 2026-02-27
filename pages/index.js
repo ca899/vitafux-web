@@ -1,7 +1,31 @@
 export default function Home() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f4f6f8" }}>
+{/* NAVBAR SUPERIOR */}
+<div style={{
+  backgroundColor: "white",
+  padding: "15px 40px",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  boxShadow: "0 2px 10px rgba(0,0,0,0.05)"
+}}>
 
+  <h2 style={{ color: "#1F5E3B", margin: 0 }}>
+    VitaFux
+  </h2>
+
+  <div>
+    <span style={{
+      fontWeight: "bold",
+      color: "#1F5E3B",
+      fontSize: "16px"
+    }}>
+      📲 967 861 674
+    </span>
+  </div>
+
+</div>
       {/* HERO SECTION */}
       <div style={{
         backgroundColor: "#1F5E3B",
