@@ -53,7 +53,7 @@ export default function Home() {
         <p>Contáctanos directamente para orientación y pedidos.</p>
 
         <a 
-          href="https://wa.me/51987275932?text=Hola%20quiero%20información%20sobre%20productos%20Fuxion"
+          href="https://wa.me/51967861674?text=Hola%20quiero%20información%20sobre%20productos%20Fuxion"
           target="_blank"
           style={whatsappStyle}
         >
@@ -62,7 +62,7 @@ export default function Home() {
 
         <p style={{ marginTop: "20px" }}>
           <a 
-            href="https://www.facebook.com/share/1FGe8Q9azt/"
+            href=https://www.facebook.com/share/1D8dN7n6VL/
             target="_blank"
             style={{ color: "#1F5E3B", fontWeight: "bold" }}
           >
