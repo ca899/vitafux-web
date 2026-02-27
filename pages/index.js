@@ -13,7 +13,7 @@ export default function Home() {
 
   <h2 style={{ color: "#1F5E3B", margin: 0 }}>  
     VitaFux
-  </h2>
+  </h2> 
 
   <div>
     <span style={{
