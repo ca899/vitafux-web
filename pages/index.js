@@ -22,7 +22,18 @@ export default function Home() {
       fontSize: "16px"
     }}>
       📲 967 861 674
-    </span>
+    <a
+  href="https://wa.me/51967861674"
+  target="_blank"
+  style={{
+    fontWeight: "bold",
+    color: "#1F5E3B",
+    fontSize: "16px",
+    textDecoration: "none"
+  }}
+>
+  📲 967 861 674
+</a>
   </div>
 
 </div>
