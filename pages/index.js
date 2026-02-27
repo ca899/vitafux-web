@@ -9,7 +9,7 @@ export default function Home() {
   justifyContent: "space-between",
   alignItems: "center",
   boxShadow: "0 2px 10px rgba(0,0,0,0.05)"
-}}>
+}}> 
 
   <h2 style={{ color: "#1F5E3B", margin: 0 }}>  
     VitaFux
